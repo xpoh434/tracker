@@ -1,0 +1,32 @@
+<assembly>
+	<id>package</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<fileSets>
+		<fileSet>
+			<directory>target/classes/</directory>
+			<includes>
+				<include>*/**</include>
+			</includes>
+			<outputDirectory>/bin</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>target/lib/</directory>
+			<includes>
+				<include>*</include>
+			</includes>
+			<outputDirectory>/lib</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>/</directory>
+			<includes>
+				<include>realm.properties</include>
+				<include>config.properties</include>
+				<include>keystore</include>
+			</includes>
+			<outputDirectory>/</outputDirectory>
+		</fileSet>
+	</fileSets>
+	   <includeBaseDirectory>false</includeBaseDirectory>
+</assembly>

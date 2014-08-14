@@ -1,0 +1,7 @@
+/logs
+/config.aws.properties
+/config.properties
+/hibernate.properties
+/keystore
+/realm.properties
+/target

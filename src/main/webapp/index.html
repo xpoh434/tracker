@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+    <script type="text/javascript" src="jquery/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="jquery/jquery.atmosphere.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="json2.min.js"></script>
+    <!-- script type="text/javascript" src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script-->
+  <script src="jquery/jquery-ui-1.10.1.min.js"></script> 
+  <script src="jquery.event.drag-2.2/jquery.event.drag-2.2.js"></script>
+  <script src="slickgrid/slick.core.js"></script>
+  <script src="slickgrid/slick.grid.js"></script>
+  <script src="slickgrid/slick.dataview.js"></script>
+  <script src="slickgrid/slick.editors.js"></script>
+  <script src="slickgrid/slick.formatters.js"></script>
+  
+  <link rel="stylesheet" href="mint-choc/jquery-ui.min.css" type="text/css"/>
+  <link rel="stylesheet" href="mint-choc/jquery.ui.theme.css" type="text/css"/>
+  <link rel="stylesheet" href="slickgrid/slick.grid.css" type="text/css"/>
+    <meta charset="utf-8">
+    <title>Stock Tracker</title>
+
+    <style>
+        * {
+            font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+            font-size: 12px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        p {
+            line-height: 18px;
+        }
+
+        div {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #content {
+            padding: 5px;
+            background: #ddd;
+            border-radius: 5px;
+            border: 1px solid #CCC;
+            margin-top: 10px;
+            width: 100%
+        }
+
+         #header {
+            padding: 5px;
+            background: #f5deb3;
+            border-radius: 5px;
+            border: 1px solid #CCC;
+            width:100%
+        }
+
+        #input {
+            border-radius: 2px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            padding: 5px;
+            width: 100%;
+        }
+
+        #status {
+            width: 100%;
+            display: block;
+            float: left;
+            margin-top: 15px;
+        }
+        #leftpane {
+        	position: relative;
+        	margin-top:0px;
+        	margin-left:10px;
+        	width: 250px;
+        	padding: 0;
+        	float:left;
+        }
+        #rightpane {      	
+        	margin-left:280px;
+        	margin-right:10px;
+        	padding: 0;
+        }
+        
+        #update{
+            padding: 5px;
+            background: #eee;
+            border-radius: 5px;
+            border: 1px solid #CCC;
+            margin-top: 10px;            
+        }
+        #main {
+        	width:100%;
+        }
+        .pos {
+        	color: white;
+        	background-color:#00a000;
+        	margin: 0;
+        }
+        .neg {
+        	color: white;
+        	background-color:#a00000;
+        	margin: 0;
+        }
+        .slick-row.odd {
+		  background: #554336;
+		}
+        
+
+    </style>
+</head>
+<body>
+ <div id="#main">
+<div id="leftpane">
+<div id="header"><h3>Stock Tracker</h3></div>
+<div id="content"></div>
+<div>
+    <span id="status">Connecting...</span>
+    <input type="text" id="input" disabled="disabled"/>
+</div>
+</div>
+<div id="rightpane">
+	<div id="update">
+		 <div id="myGrid"></div>
+	</div>
+</div>
+</div>
+</body>
+</html>
+
